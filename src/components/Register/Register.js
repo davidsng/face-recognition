@@ -23,7 +23,7 @@ export class Register extends Component {
       }
 
       onSubmitSignin = () => {
-        fetch('http://localhost:8080/register', {
+        fetch('https://ghoulish-vault-81345.herokuapp.com/register', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

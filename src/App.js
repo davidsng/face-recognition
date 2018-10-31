@@ -47,7 +47,7 @@ class App extends Component {
   }
 
   // componentDidMount() {
-  //   fetch('http://localhost:8080/')
+  //   fetch('https://ghoulish-vault-81345.herokuapp.com/')
   //     .then(response => response.json())
   //     .then(data => console.log(data))
   // }
@@ -83,7 +83,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input })
-    fetch('http://localhost:8080/imageurl', {
+    fetch('https://ghoulish-vault-81345.herokuapp.com/imageurl', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -93,7 +93,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('http://localhost:8080/image', {
+          fetch('https://ghoulish-vault-81345.herokuapp.com/image', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
