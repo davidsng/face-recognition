@@ -1,0 +1,7 @@
+.form {
+    width: 700px;
+    background: radial-gradient(circle at right, rgba(233, 241, 223, 0) 0.33333em, #e9f1df 0.33333em, #e9f1df 0.48889em, rgba(233, 241, 223, 0) 0.48889em, rgba(233, 241, 223, 0) 0.82222em, #e9f1df 0.82222em, #e9f1df 0.97778em, rgba(233, 241, 223, 0) 0.97778em, rgba(233, 241, 223, 0) 1.31111em, #e9f1df 1.31111em, #e9f1df 1.46667em, rgba(233, 241, 223, 0) 1.46667em) 0 0, radial-gradient(circle at left, rgba(233, 241, 223, 0) 0.57778em, #e9f1df 0.57778em, #e9f1df 0.73333em, rgba(233, 241, 223, 0) 0.73333em, rgba(233, 241, 223, 0) 1.06667em, #e9f1df 1.06667em, #e9f1df 1.22222em, rgba(233, 241, 223, 0) 1.22222em) 0 3.05146em, linear-gradient(to right top, #E9F1DF 0.15556em, rgba(233, 241, 223, 0) 0.15556em) 1.22222em 0.15556em, linear-gradient(to left top, #E9F1DF 0.15556em, rgba(233, 241, 223, 0) 0.15556em) 1.22222em 0.15556em, linear-gradient(to right bottom, #E9F1DF 0.15556em, rgba(233, 241, 223, 0) 0.15556em) 1.22222em 0.15556em, linear-gradient(to left bottom, #E9F1DF 0.15556em, rgba(233, 241, 223, 0) 0.15556em) 1.22222em 0.15556em;
+    background-size: 2.8em 2.8em;
+    background-color: lightblue;
+  
+}
