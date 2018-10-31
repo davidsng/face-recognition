@@ -46,13 +46,6 @@ class App extends Component {
     })
   }
 
-  // componentDidMount() {
-  //   fetch('https://ghoulish-vault-81345.herokuapp.com/')
-  //     .then(response => response.json())
-  //     .then(data => console.log(data))
-  // }
-
-
   calculateFaceLocation = (data) => {
     const image = document.getElementById('inputimage');
     const width = Number(image.width);
@@ -125,9 +118,9 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state
     return (
       <div className="App">
-        {/* <Particles className='particles'
+        <Particles className='particles'
                 params={particlesOptions}
-              /> */}
+              />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         {
           route === 'home'
@@ -151,73 +144,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-// { 
-//   if (this.state.route === 'home') {
-//   <div>
-//       <Logo />
-//       <Rank />
-//       <ImageLinkForm
-//         onInputChange={this.onInputChange}
-//         onButtonSubmit={this.onButtonSubmit} />
-//       <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl} />
-//   </div>
-// } else if (this.state.route === 'signin') {
-//     <Signin onRouteChange={this.onRouteChange} />
-// } else if (this.state.route === 'signout') {
-//   <Signin onRouteChange={this.onRouteChange} />
-// } else {
-//   <Register onRouteChange={this.onRouteChange}/>
-// }
-// }
-
-
-// const particlesOptions = {
-//   "particles": {
-//     "number": {
-//       "value": 30,
-//       "density": {
-//         "enable": true,
-//         "value_area": 800
-//       }
-//     },
-//     "color": {
-//       "value": "#ffffff"
-//     }
-//   }
-// }
-
-
-
-  // calculateFaceLocation = (data) => {
-  //   console.log(data)
-  //   const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box
-  //   const image = document.getElementById('inputimage')
-  //   const width = Number(image.width)
-  //   const height = Number(image.height)
-  //   return {
-  //     leftCol: clarifaiFace.left_col * width,
-  //     topRow: clarifaiFace.top_row * height,
-  //     rightCol: width - (clarifaiFace.right_col * width),
-  //     bottomRow: height - (clarifaiFace.bottom_row * height)
-  //   }
-  // }
-
-  // calculateFaceLocation = (data) => {
-  //   const image = document.getElementById('inputimage')
-  //   const width = Number(image.width)
-  //   const height = Number(image.height)
-
-  //   data.outputs[0].data.regions.map(faces => {
-  //     const clarifaiFace = faces.region_info.bounding_box
-  //     return {
-  //       leftCol: clarifaiFace.left_col * width,
-  //       topRow: clarifaiFace.top_row * height,
-  //       rightCol: width - (clarifaiFace.right_col * width),
-  //       bottomRow: height - (clarifaiFace.bottom_row * height)
-  //     }
-  //   })
-  // }
