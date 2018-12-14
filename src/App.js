@@ -10,8 +10,6 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import Signin from './components/Signin/Signin'
 import Register from './components/Register/Register'
 
-
-
 const initialState = {
   input: '',
   imageUrl: '',
@@ -148,7 +146,8 @@ class App extends Component {
                 onButtonSubmit={this.onButtonSubmit} />
               <FaceRecognition box={box} imageUrl={imageUrl} />
             </div>
-            : (
+            : 
+            (
               route === 'signin'
                 ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
                 : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
